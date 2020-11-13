@@ -17,4 +17,28 @@ element.addEventListener('click',
    console.log('questi sono i km prelevati dal dom ' + km);
    var age= document.getElementById('age').value;
    console.log('questi sono gli anni prelevati dal dom ' + age);
+
+   // STABILISCO prezzi e sconto
+   var prezzo = 0.21;
+   console.log('prezzo per km ' + prezzo);
+   var prezzoNormale = km * prezzo;
+   console.log('prezzo per tutti ' + prezzoNormale);
+   var scontoMinori = (prezzoNormale * 20) / 100;
+   console.log('sconto minori ' + scontoMinori);
+   var scontoOver = (prezzoNormale * 40) / 100;
+   console.log('sconto over 65 ' + scontoOver);
+
+   // GESTISCO GLI SCONTI
+   if (age < 18) {
+     var prezzoMinori = (prezzoNormale - scontoMinori);
+     console.log('prezzo minori ' + prezzoMinori);
+   } else if (age > 65) {
+     var prezzoOver = (prezzoNormale - scontoOver);
+     console.log('prezzo Over 65 ' + prezzoOver);
+   }
+   else {
+     prezzoNormale;
+     console.log('prezzo normale ' + prezzoNormale);
+   }
+
 } );
