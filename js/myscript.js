@@ -44,4 +44,7 @@ element.addEventListener('click',
    // PREZZO ARROTONDATO
    var prezzoFinale =  Math.round(prezzoParziale * 100)/100 + " €";
    console.log('prezzo finale ' + prezzoFinale);
+
+   // STAMPO SUL DOM
+
 } );
