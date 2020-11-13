@@ -30,15 +30,18 @@ element.addEventListener('click',
 
    // GESTISCO GLI SCONTI
    if (age < 18) {
-     var prezzoMinori = (prezzoNormale - scontoMinori);
-     console.log('prezzo minori ' + prezzoMinori);
+     var prezzoParziale = (prezzoNormale - scontoMinori);
+     console.log('prezzo minori ' + prezzoParziale);
    } else if (age > 65) {
-     var prezzoOver = (prezzoNormale - scontoOver);
-     console.log('prezzo Over 65 ' + prezzoOver);
+     var prezzoParziale = (prezzoNormale - scontoOver);
+     console.log('prezzo Over 65 ' + prezzoParziale);
    }
    else {
-     prezzoNormale;
-     console.log('prezzo normale ' + prezzoNormale);
+     prezzoParziale;
+     console.log('prezzo normale ' + prezzoParziale);
    }
 
+   // PREZZO ARROTONDATO
+   var prezzoFinale =  Math.round(prezzoParziale * 100)/100 + " €";
+   console.log('prezzo finale ' + prezzoFinale);
 } );
