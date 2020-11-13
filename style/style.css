@@ -46,7 +46,12 @@ h1 {
 
 }
 
-
+.not_visible {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
 #ticket {
   width: 60%;
   height: 250px;

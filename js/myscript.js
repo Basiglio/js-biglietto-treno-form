@@ -59,8 +59,9 @@ element.addEventListener('click',
    document.getElementById('carrozza').innerHTML = numeroCarrozza;
    document.getElementById('ticket_code').innerHTML = ticketCode;
    document.getElementById('ticket_price').innerHTML = prezzoFinale;
-
-
+   // FAR APPARIRE IL BIGLIETTO
+   // var visible = document.getElementById('ticket');
+   // not_visible.className = "";
 
 
 } );
