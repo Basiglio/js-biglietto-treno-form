@@ -46,5 +46,9 @@ element.addEventListener('click',
    console.log('prezzo finale ' + prezzoFinale);
 
    // STAMPO SUL DOM
+   document.getElementById('ticket_name').innerHTML = name;
+   
+   document.getElementById('ticke_price').innerHTML = prezzoFinale;
+
 
 } );
