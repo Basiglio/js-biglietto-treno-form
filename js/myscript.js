@@ -7,7 +7,7 @@
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
 
-
+// PRELEVO I DATI DELL'UTENTE DAL DOM
 var element = document.getElementById("submit");
 element.addEventListener('click',
  function() {
@@ -16,5 +16,5 @@ element.addEventListener('click',
    var km = document.getElementById('km').value;
    console.log('questi sono i km prelevati dal dom ' + km);
    var age= document.getElementById('age').value;
-   console.log('questi sono gli anni prelevati dal dom ' + age)
+   console.log('questi sono gli anni prelevati dal dom ' + age);
 } );
