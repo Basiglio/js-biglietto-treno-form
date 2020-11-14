@@ -65,7 +65,14 @@ submit.addEventListener('click',
    document.getElementById('ticket_price').innerHTML = prezzoFinale;
    // FAR APPARIRE IL BIGLIETTO
    var visible = document.getElementById('ticket');
-   visible.className = "";
-
-
+   visible.className = "visible";
 } );
+
+var reset = document.getElementById("reset");
+reset.addEventListener('click',
+function() {
+  var notVisible = document.getElementById('ticket');
+  notVisible.className = "not_visible";
+  document.getElementById("name").value = "";
+  document.getElementById("km").value = "";
+});
