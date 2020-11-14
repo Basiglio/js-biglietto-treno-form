@@ -29,6 +29,8 @@ element.addEventListener('click',
    // STABILISCO LE OFFERTE
    var offertaMinore = "-20%"
    var offertaOver = "-40%"
+   var offertaStandard = "Standard"
+
    // GESTISCO GLI SCONTI
    if (age < 18) {
      var prezzoParziale = (prezzoNormale - scontoMinori);
@@ -40,9 +42,11 @@ element.addEventListener('click',
      console.log('prezzo Over 65 ' + prezzoParziale);
    }
    else {
-     prezzoParziale;
+     var prezzoParziale = prezzoNormale;
+     var offertaAggiunta = offertaStandard;
      console.log('prezzo normale ' + prezzoParziale);
    }
+
    // PREZZO ARROTONDATO
    var prezzoFinale =  Math.round(prezzoParziale * 100)/100 + " €";
    console.log('prezzo finale ' + prezzoFinale);
