@@ -72,7 +72,7 @@ width: 200px;
 
 /* VISIBILITY SETTINGS */
 .not_visible {
-  /* opacity: 0; */
+  opacity: 0;
   transition: 0.5s;
 }
 .visible {
