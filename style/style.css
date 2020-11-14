@@ -13,13 +13,13 @@
   flex-direction: column;
   background-color: tomato;
 }
-
 h1 {
   color: white;
   font-size: 50px;
   margin-top: 50px;
 }
 
+/* FORM TOP */
 #form {
   width: 60%;
   height: 300px;
@@ -27,46 +27,84 @@ h1 {
   background-color: white;
   border: 1px solid black;
 }
-#form ul {
+#form .form_top {
   display: flex;
   justify-content: space-around;
 }
-#form li {
+#form  li {
   display: inline-block;
   list-style: none;
   margin-top: 50px;
+  width: 300px;
+  text-align: center;
   font-size: 30px;
 }
-.bottoni {
+
+/* FORM INPUT */
+.form_input {
+  display: flex;
+  justify-content: space-around;
+}
+#name, #km, #age {
+width: 200px;
+}
+
+/* FORM BOTTOM */
+.form_bottom {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
 }
-.bottoni span {
-
+.form_bottom span {
+  display: inline-block;
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  cursor: pointer;
+}
+.form_bottom span:hover {
+  background-color: white;
 }
 
+/* VISIBILITY SETTINGS */
 .not_visible {
-  opacity: 0;
+  /* opacity: 0; */
   transition: 0.5s;
 }
 .visible {
   opacity: 1;
   transition: 0.5s;
 }
+/* /VISIBILITY SETTINGS */
+
+/* TICKET */
 #ticket {
   width: 60%;
   height: 250px;
   margin-top: 50px;
   background-color: white;
   border: 1px solid black;
-}
-#ticket ul {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+
 }
-#ticket li {
+
+/* TICKET TOP */
+.table {
   list-style: none;
-  font-size: 30px;
-  width: 50px;
+  margin-top: 20px;
 }
+.table th, .table td {
+  width: 100px;
+}
+.table  td {
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+/* TICKET BOTTOM */

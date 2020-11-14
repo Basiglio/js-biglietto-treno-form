@@ -9,12 +9,12 @@
     <div id="container">
       <h1>Calcola il prezzo del tuo biglietto!</h1>
       <div id="form">
-        <ul>
+        <ul class="form_top">
           <li>Nome e Cognome</li>
           <li>KM da Percorrere</li>
           <li>Fascia d'età</li>
         </ul>
-        <ul>
+        <ul class="form_input">
           <li>
             <input type="text" name="name" placeholder="Inserisci il tuo nome" value="" id="name" required>
           </li>
@@ -28,26 +28,28 @@
              <option name="age" value="65">Over 65</option>
             </select>
         </ul>
-        <div class="bottoni">
+        <div class="form_bottom">
           <span id="submit">GENERA</span>
           <span id="reset">ANNULLA</span>
         </div>
       </div>
       <div id="ticket" class="not_visible">
-        <ul>
-          <li>Nome</li>
-          <li>Offerta</li>
-          <li>Carrozza</li>
-          <li>Codice</li>
-          <li>Prezzo</li>
-        </ul>
-        <ul>
-          <li id="ticket_name">X</li>
-          <li id="offerta">X</li>
-          <li id="carrozza">X</li>
-          <li id="ticket_code">X</li>
-          <li id="ticket_price">X</li>
-        </ul>
+        <table class="table">
+          <tr>
+            <th>Nome</th>
+            <th>Offerta</th>
+            <th>Carrozza</th>
+            <th>Codice</th>
+            <th>Prezzo</th>
+          </tr>
+          <tr>
+            <td id="ticket_name">X</td>
+            <td id="offerta">X</td>
+            <td id="carrozza">X</td>
+            <td id="ticket_code">X</td>
+            <td id="ticket_price">X</td>
+          </tr>
+        </table>
       </div>
     </div>
 
