@@ -60,8 +60,8 @@ element.addEventListener('click',
    document.getElementById('ticket_code').innerHTML = ticketCode;
    document.getElementById('ticket_price').innerHTML = prezzoFinale;
    // FAR APPARIRE IL BIGLIETTO
-   // var visible = document.getElementById('ticket');
-   // not_visible.className = "";
+   var visible = document.getElementById('ticket');
+   visible.className = "";
 
 
 } );

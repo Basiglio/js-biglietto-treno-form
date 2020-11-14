@@ -47,7 +47,7 @@ h1 {
 }
 
 .not_visible {
-  visibility: hidden;
+  opacity: 0;
 }
 .visible {
   visibility: visible;
