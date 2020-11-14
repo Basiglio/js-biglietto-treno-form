@@ -11,7 +11,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: tomato;
+  background-image: url('https://i.pinimg.com/originals/82/8f/ed/828fed19f5bca67f474f5db9793197c0.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
   color: white;
@@ -24,8 +27,8 @@ h1 {
   width: 60%;
   height: 300px;
   margin-top: 50px;
-  background-color: white;
-  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
 }
 #form .form_top {
   display: flex;
@@ -55,7 +58,7 @@ width: 200px;
   justify-content: space-around;
   margin-top: 50px;
 }
-.form_bottom span {
+.form_bottom input {
   display: inline-block;
   border: 1px solid black;
   width: 100px;
@@ -63,11 +66,11 @@ width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: tomato;
+  background-color: #DC8D71;
   cursor: pointer;
 }
-.form_bottom span:hover {
-  background-color: white;
+.form_bottom input:hover {
+  background-color: tomato;
 }
 
 /* VISIBILITY SETTINGS */

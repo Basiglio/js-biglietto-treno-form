@@ -14,23 +14,23 @@
           <li>KM da Percorrere</li>
           <li>Fascia d'età</li>
         </ul>
-        <ul class="form_input">
-          <li>
-            <input type="text" name="name" placeholder="Inserisci il tuo nome" value="" id="name" required>
-          </li>
-          <li>
-            <input type="number" name="km" placeholder="Inserisci KM" value="" id="km" required>
-          </li>
-          <li>
-            <select id="age" required>
-             <option name="age" value="30" >Standard</option>
-             <option name="age" value="18">Minore 18</option>
-             <option name="age" value="65">Over 65</option>
-            </select>
-        </ul>
+          <ul class="form_input">
+            <li>
+              <input type="text" name="name" placeholder="Inserisci il tuo nome" value="" id="name">
+            </li>
+            <li>
+              <input type="number" name="km" placeholder="Inserisci KM" value="" id="km">
+            </li>
+            <li>
+              <select id="age">
+               <option name="age" value="30" >Standard</option>
+               <option name="age" value="18">Minore 18</option>
+               <option name="age" value="65">Over 65</option>
+              </select>
+          </ul>
         <div class="form_bottom">
-          <span id="submit">GENERA</span>
-          <span id="reset">ANNULLA</span>
+          <input type="submit"  value="Convalida" id="submit"></input>
+          <input type="submit"  value="Reset" id="reset"></input>
         </div>
       </div>
       <div id="ticket" class="not_visible">
