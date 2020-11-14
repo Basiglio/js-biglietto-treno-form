@@ -16,14 +16,17 @@
         </ul>
         <ul>
           <li>
-            <input type="text" name="name" placeholder="Inserisci il tuo nome" value="" id="name">
+            <input type="text" name="name" placeholder="Inserisci il tuo nome" value="" id="name" required>
           </li>
           <li>
-            <input type="number" name="km" placeholder="Inserisci KM" value="" id="km">
+            <input type="number" name="km" placeholder="Inserisci KM" value="" id="km" required>
           </li>
           <li>
-            <input type="text" name="age" placeholder="seleziona età" value="" id="age">
-          </li>
+            <select id="age" required>
+             <option name="age" value="30" >Standard</option>
+             <option name="age" value="18">Minore 18</option>
+             <option name="age" value="65">Over 65</option>
+            </select>
         </ul>
         <div class="bottoni">
           <span id="submit">GENERA</span>

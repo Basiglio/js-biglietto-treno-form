@@ -1,15 +1,14 @@
 // Creiamo un finto biglietto del treno con:
-// Nome passeggero
-// Codice treno (numero casuale tra 90000 e 100000 escluso)
-// Numero carrozza (numero casuale tra 1 e 9)
-// Prezzo calcolato
+
+
+
 // Categoria selezionata dall'utente (offerta)
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
 
 // PRELEVO I DATI DELL'UTENTE DAL DOM
-var element = document.getElementById("submit");
-element.addEventListener('click',
+var submit = document.getElementById("submit");
+submit.addEventListener('click',
  function() {
    var name = document.getElementById('name').value;
    console.log('questo è il nome prelevato dal dom ' + name);
@@ -26,17 +25,18 @@ element.addEventListener('click',
    console.log('sconto minori ' + scontoMinori);
    var scontoOver = (prezzoNormale * 40) / 100;
    console.log('sconto over 65 ' + scontoOver);
+
    // STABILISCO LE OFFERTE
    var offertaMinore = "-20%"
    var offertaOver = "-40%"
    var offertaStandard = "Standard"
 
    // GESTISCO GLI SCONTI
-   if (age < 18) {
+   if (age == 18) {
      var prezzoParziale = (prezzoNormale - scontoMinori);
      var offertaAggiunta = offertaMinore;
      console.log('prezzo minori ' + prezzoParziale);
-   } else if (age > 65) {
+   } else if (age == 65) {
      var prezzoParziale = (prezzoNormale - scontoOver);
      var offertaAggiunta = offertaOver;
      console.log('prezzo Over 65 ' + prezzoParziale);
